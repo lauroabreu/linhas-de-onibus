@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('imagens/imagem.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+#fundo{
+    background-color: rgba(0, 0, 0, 0.68);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cx1{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cx2{
+    
+    display: flex;
+    align-items: center;
+}
+
+.cx2 a{
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    color: white;
+}
+
+.cx2 a:hover{
+    color: yellow;
+}
+
+
+
+h1{
+    text-align: center;
+    padding: 6px;
+}
+
+#caixa{
+    width: 44%;
+    margin-left: 5%;
+    margin-top: 1%;
+    padding-bottom: 7px;
+}
+
+input{ 
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    width: 90%;
+    height: 30px;
+    margin: 6px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    font-size: 10pt;
+}
+
+input::placeholder {
+    color:black;
+  }
+
+h2{
+    text-align: center;
+    padding: 6px;
+}
+
+
+input.plataformas{
+    width: 41%;
+    
+}
+
+select{
+    margin: 5px;
+    width: 42%;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+input[type=submit]{
+    background-color: yellowgreen;
+    color: black;
+    display: block;
+    width: 25%;
+    height: 35px;
+    margin: 8px auto;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+}
+
+div.msg-erro{
+    width: 44%;
+    margin-left: 5%;
+    margin-top: 5px;
+    color: white;
+}
+div.msg-sucesso{
+    width: 44%;
+    margin-left: 5%;
+    margin-top: 5px;
+    color: white;
+}
+
+
+
+@media(max-width: 1000px){
+
+    h1{
+        padding:4px;
+        font-size: 21pt;
+    }
+    input{ 
+        width: 90%;
+        height: 15px;
+        margin: 5px;
+        padding: 4px 7px;
+        font-size: 9pt;
+    }
+
+    select{
+        width: 42%;
+        height: 20px;
+        font-size: 9pt;
+    }
+    
+    input.plataformas{
+        width: 38%;
+        
+    }
+}
+
+
+@media(min-width: 376px) and (max-width: 600px){
+    #caixa{
+        width: 80%;
+        margin: auto;
+       
+    }
+
+    h1{
+        padding:4px;
+        font-size: 20pt;
+    }
+    input{ 
+        width: 90%;
+        height: 25px;
+        margin: 5px;
+        padding: 3px 5px;
+        font-size: 12pt;
+    }
+
+    select{
+        width: 42%;
+        height: 25px;
+        font-size: 12pt;
+    }
+
+    input.plataformas{
+        width: 40%;
+        
+    }
+
+    input[type=submit]{
+        width: 40%;
+        height: 35px;
+        font-size: 10pt;
+    }
+
+}
+
+@media(max-width: 375px){
+    #caixa{
+        width: 80%;
+        margin: auto;
+       
+    }
+
+    h1{
+        padding:4px;
+        font-size: 18pt;
+    }
+    input{ 
+        width: 90%;
+        height: 20px;
+        margin: 5px;
+        padding: 3px 5px;
+        font-size: 10pt;
+    }
+
+    select{
+        width: 42%;
+        height: 20px;
+        font-size: 10pt;
+    }
+
+    input.plataformas{
+        width: 38%;
+        
+    }
+
+    input[type=submit]{
+        width: 40%;
+        height: 35px;
+        font-size: 10pt;
+    }
+
+}

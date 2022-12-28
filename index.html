@@ -1,0 +1,60 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="fundo">
+
+        <header>
+            <div class="cx1"></div>
+            <div class="cx2">
+                <div><a href="index.php">Cadastrar</a></div>
+                <div> <a href="">Excluir</a> </div>
+                
+        
+            </div>
+        </header>
+        
+        <div id="caixa">
+            <h1>Cadastro de Linhas de Ônibus</h1>
+            <form method="POST" action="processa.php">
+                <div class="onibus">
+                    <input type="text" name="onibus" placeholder="Onibus" maxlength="100">
+                    <input type="text" name="cor" placeholder="Cor" maxlength="250">
+                    <input type="text" name="codigo" placeholder="Código" maxlength="5">
+                </div>
+                
+                    
+                    <input type="text" name="origem" placeholder="Terminal de Origem" maxlength="50" class="terminais">
+
+                    <input type="text" name="destino" placeholder="Terminal de Destino" maxlength="50" class="terminais">
+                    
+                    <input type="text" name="plataforma1" placeholder="plataforma de origem" maxlength="50" class="plataformas">
+
+                    <input type="text" name="plataforma2" placeholder="plataforma de destino" maxlength="50" class="plataformas">
+                    
+                    <select name="sentido" id="sentido">
+                        <option >Sentido</option>
+                        <option value="bairro">Bairro</option>
+                        <option value="centro">Centro</option>
+                    </select>
+                
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
